@@ -23,7 +23,7 @@ body{
 
 input{
     flex: 5;
-    padding: 10px;
+    padding: 5px;
     font-size: 1.2rem;
     background-color: white;
 }
@@ -32,10 +32,11 @@ input{
     font-weight: bold;
 }
  #input-task{
-    color: red;
+    color: black;
+    font-weight: bold;
 }
 
-button{
+#add-task{
     flex: 1;
     margin-left: 10px;
     padding: 2px;
@@ -46,7 +47,56 @@ button{
     transition: .3s;
 }
 
-button:hover{
+#add-task:hover{
     background-color: green;
     color: white;
 }
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    width: 100%;
+}
+.task li{
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 5px;
+    flex: 4;
+    margin: 5px;
+}
+
+.task button{
+    padding: 5px;
+    flex: 1;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.task .check{
+    color: orange;
+    margin-right: 10px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+
+.task .check:hover{
+    color: white;
+    background-color: orange;
+}
+
+.task .delete{
+    color: red;
+    border: solid 2px red;
+    font-size: 1.5rem;
+}
+
+.task .delete:hover{
+    color: white;
+    background-color: red;
+}   
